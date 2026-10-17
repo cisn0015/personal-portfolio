@@ -1,0 +1,342 @@
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+
+/* Main colors */
+:root {
+    --background: #fffaf7;
+    --surface: #ffffff;
+    --pink: #c78491;
+    --light-pink: #f9e8e9;
+    --text: #503e42;
+    --muted: #786a6e;
+    --border: #f0dadd;
+    --shadow: rgba(105, 65, 75, 0.09);
+}
+
+/* Dark mode */
+body.dark-mode {
+    --background: #231e24;
+    --surface: #342a33;
+    --pink: #e5a6b3;
+    --light-pink: #43313e;
+    --text: #fff1f4;
+    --muted: #d7c0c7;
+    --border: #594451;
+    --shadow: rgba(0, 0, 0, 0.2);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: var(--background);
+    color: var(--text);
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.7;
+    transition: background 0.3s, color 0.3s;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: var(--text);
+}
+
+h1 {
+    font-size: clamp(2.7rem, 6vw, 4.5rem);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.45rem;
+}
+
+h4 {
+    color: var(--pink);
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+p {
+    color: var(--muted);
+}
+
+.lead {
+    color: var(--text);
+    font-size: 1.15rem;
+}
+
+/* Navigation */
+.navbar {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 17px 0;
+}
+
+.navbar-brand {
+    color: var(--pink);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+    .navbar-brand:hover {
+        color: var(--pink);
+    }
+
+.nav-link {
+    color: var(--text);
+    font-weight: 600;
+    margin: 0 7px;
+}
+
+    .nav-link:hover,
+    .nav-link.active {
+        color: var(--pink) !important;
+    }
+
+.navbar-toggler {
+    border-color: var(--pink);
+    background-color: #f9e8e9;
+}
+
+.theme-toggle {
+    border: 1px solid var(--border);
+    background: var(--light-pink);
+    color: var(--text);
+    border-radius: 25px;
+}
+
+    .theme-toggle:hover {
+        background: var(--pink);
+        color: white;
+    }
+
+/* Home page */
+.hero-section {
+    padding: 110px 0;
+    background: linear-gradient(135deg, var(--background), var(--light-pink));
+}
+
+.hero-subtitle {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    margin: 20px 0;
+}
+
+.accent-text {
+    color: var(--pink);
+}
+
+.eyebrow {
+    color: var(--pink);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.page-header {
+    padding: 85px 0;
+    background: var(--light-pink);
+}
+
+    .page-header p {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* Profile picture */
+.profile-frame {
+    width: min(100%, 340px);
+    aspect-ratio: 1;
+    padding: 14px;
+    margin: auto;
+    background: var(--surface);
+    border: 3px solid var(--border);
+    border-radius: 50%;
+    box-shadow: 0 18px 45px var(--shadow);
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Sections and cards */
+.section-padding {
+    padding: 85px 0;
+}
+
+.section-heading {
+    margin-bottom: 30px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid var(--border);
+}
+
+.custom-card {
+    background: var(--surface);
+    padding: 35px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    box-shadow: 0 8px 25px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+    .custom-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px var(--shadow);
+    }
+
+.feature-icon {
+    font-size: 2.7rem;
+    margin-bottom: 15px;
+}
+
+.date-label {
+    display: inline-block;
+    color: var(--pink);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+/* Buttons */
+.btn-pink {
+    background: var(--pink);
+    color: white;
+    border: 2px solid var(--pink);
+    padding: 11px 25px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+    .btn-pink:hover {
+        background: #a96373;
+        border-color: #a96373;
+        color: white;
+    }
+
+.btn-outline-pink {
+    background: transparent;
+    color: var(--text);
+    border: 2px solid var(--pink);
+    padding: 11px 25px;
+    border-radius: 30px;
+    font-weight: 700;
+}
+
+    .btn-outline-pink:hover {
+        background: var(--pink);
+        color: white;
+    }
+
+.filter-btn.active {
+    background: var(--pink);
+    color: white;
+    border-color: var(--pink);
+}
+
+/* Skill badges */
+.skill-badge {
+    display: inline-block;
+    background: var(--light-pink);
+    color: var(--text);
+    border: 1px solid var(--border);
+    border-radius: 25px;
+    padding: 10px 14px;
+    margin: 5px 4px 5px 0;
+    font-size: 0.85rem;
+    font-weight: 600;
+    white-space: normal;
+}
+
+/* Project cards */
+.project-card {
+    overflow: hidden;
+}
+
+.project-category {
+    color: var(--pink);
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.project-card h3 {
+    margin: 12px 0;
+}
+
+/* Search box */
+.search-input {
+    padding: 15px 20px;
+    border: 2px solid var(--border);
+    border-radius: 30px;
+    background: var(--surface);
+    color: var(--text);
+}
+
+    .search-input:focus {
+        background: var(--surface);
+        color: var(--text);
+        border-color: var(--pink);
+        box-shadow: 0 0 0 3px var(--light-pink);
+    }
+
+    .search-input::placeholder {
+        color: var(--muted);
+    }
+
+/* Footer */
+footer {
+    background: var(--light-pink);
+    padding: 30px 0;
+    border-top: 1px solid var(--border);
+}
+
+    footer p {
+        margin: 0;
+        color: var(--text);
+    }
+
+/* Mobile layout */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 65px 0;
+        text-align: center;
+    }
+
+        .hero-section .d-flex {
+            justify-content: center;
+        }
+
+    .section-padding {
+        padding: 55px 0;
+    }
+
+    .page-header {
+        padding: 60px 0;
+    }
+
+    .custom-card {
+        padding: 25px;
+    }
+
+    .profile-frame {
+        max-width: 260px;
+    }
+
+    .navbar-nav {
+        padding-top: 15px;
+    }
+}

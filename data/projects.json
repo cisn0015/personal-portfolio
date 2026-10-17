@@ -1,0 +1,38 @@
+[
+  {
+    "title": "GL Dining Website",
+    "category": "Web",
+    "description": "A website planning and design project for Blu Fine Wine & Food and The Library Bar & Grill. Developed client requirements, sitemaps, user flows, and website layouts.",
+    "technologies": [ "HTML", "CSS", "Web Design" ]
+  },
+  {
+    "title": "Nike Sales Dashboard",
+    "category": "Data",
+    "description": "Analyzed Nike sales data using Tableau to compare retailers, regions, and product performance. Created visualizations to better understand sales patterns.",
+    "technologies": [ "Tableau", "Excel", "Data Visualization" ]
+  },
+  {
+    "title": "Riverside EMR Project",
+    "category": "Business",
+    "description": "Created a project plan for implementing an electronic medical records system, including a work breakdown structure, cost-benefit analysis, risk register, and vendor evaluation.",
+    "technologies": [ "Project Management", "Excel", "Smartsheet" ]
+  },
+  {
+    "title": "Shipping Calculator",
+    "category": "Programming",
+    "description": "Built a C# console application that calculates shipping costs based on order totals, shipping methods, and customer rewards.",
+    "technologies": [ "C#", "Visual Studio", "Programming" ]
+  },
+  {
+    "title": "Coffee Chain Dashboard",
+    "category": "Data",
+    "description": "Created interactive Tableau dashboards to analyze product sales, marketing expenses, and regional business performance.",
+    "technologies": [ "Tableau", "Excel", "Business Intelligence" ]
+  },
+  {
+    "title": "Campus Connections Website",
+    "category": "Web",
+    "description": "Developed a responsive student-focused website using HTML, CSS, and JavaScript with organized navigation and interactive page elements.",
+    "technologies": [ "HTML", "CSS", "JavaScript" ]
+  }
+]
